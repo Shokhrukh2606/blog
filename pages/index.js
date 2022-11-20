@@ -25,10 +25,12 @@ export default function Home({ posts }) {
           <div className="pt-6">
             <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Hi, I am{' '}
-              <span className="text-primary-color-500 dark:text-primary-color-dark-500">Parth</span>
+              <span className="text-primary-color-500 dark:text-primary-color-dark-500">
+                Shokhrukh
+              </span>
             </h1>
             <h2 className="prose pt-5 text-lg text-gray-600 dark:text-gray-300">
-              {`Welcome to ${siteMetadata.description}. I am a Data Engineer who is passionate about Data Science and Automation. In my free time, I like developing `}
+              {`Welcome to ${siteMetadata.description}. I am a Full Stack Developer who is passionate about Web Development. In my free time, I like developing `}
               side projects and learning new technologies.
             </h2>
             <p className="pt-5 text-lg leading-7 text-slate-600 dark:text-slate-300 sm:block md:hidden lg:hidden">
@@ -135,7 +137,7 @@ export default function Home({ posts }) {
               <div className="my-2 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-fuchsia-600 to-emerald-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                  <Link href="https://parthdesai.vercel.app/">
+                  <Link href="/journey">
                     <span className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                       <span className="flex items-center space-x-5">
                         <svg
@@ -155,7 +157,7 @@ export default function Home({ posts }) {
                         <span className="pr-6 text-gray-900 dark:text-gray-100">Read my story</span>
                       </span>
                       <span className="pl-6 text-indigo-400 transition duration-200 group-hover:text-gray-900 dark:group-hover:text-gray-100">
-                        Website&nbsp;&rarr;
+                        Journey&nbsp;&rarr;
                       </span>
                     </span>
                   </Link>
@@ -164,7 +166,7 @@ export default function Home({ posts }) {
               <div className="my-2 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r  from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                  <Link href="https://parthdesai.vercel.app/resume.pdf">
+                  <Link href="/static/Resume.pdf">
                     <span className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                       <span className="flex items-center space-x-5">
                         <svg

@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Blog | Shokhrukh Toshniyozov',
   author: 'Shokhrukh Toshniyozov',
   headerTitle: 'Mere Musings',
-  description: 'My personal blog where I share my musings',
+  description: 'My personal blog where I share my programming experience',
   snippets: 'Reuseable code snippets collected by Parth',
   language: 'en-us',
   theme: 'system', // system, dark or light
