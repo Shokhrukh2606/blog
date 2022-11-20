@@ -1,6 +1,6 @@
 const siteMetadata = {
-  title: 'Blog | Parth Desai',
-  author: 'Parth Desai',
+  title: 'Blog | Shokhrukh Toshniyozov',
+  author: 'Shokhrukh Toshniyozov',
   headerTitle: 'Mere Musings',
   description: 'My personal blog where I share my musings',
   snippets: 'Reuseable code snippets collected by Parth',
@@ -11,10 +11,10 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'desaiparth2000@gmail.com',
-  github: 'https://github.com/pycoder2000',
-  twitter: 'https://twitter.com/lone_Musk',
-  linkedin: 'https://www.linkedin.com/in/parth-desai-2bb1b0160/',
+  email: 'shohwebper@gmail.com',
+  github: 'https://github.com/Shokhrukh2606',
+  twitter: 'https://twitter.com/shohwebper',
+  linkedin: 'https://www.linkedin.com/in/shokhrukh-toshniyozov/',
   website: 'https://parthdesai.vercel.app',
   locale: 'en-US',
   analytics: {
@@ -46,7 +46,7 @@ const siteMetadata = {
     },
   },
   socialAccount: {
-    twitter: 'lone_Musk',
+    twitter: 'shohwebper',
   },
 }
 
