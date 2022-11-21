@@ -3,12 +3,13 @@ import ContactLink from '@/components/ContactLink'
 import { PageSEO } from '@/components/SEO'
 import { useState } from 'react'
 const Contact = () => {
-  const [sendedData, setSendedData] = useState({
+  const initialData = {
     guestName: '',
     messageTitle: '',
     email: '',
     message: '',
-  })
+  }
+  const [sendedData, setSendedData] = useState(initialData)
   const changer = (e) => {
     setSendedData({ ...sendedData, [e.target.name]: e.target.value })
   }
@@ -17,20 +18,25 @@ const Contact = () => {
     const res = await fetch('https://rlcxc7pxe8.execute-api.us-east-2.amazonaws.com/v1/contact', {
       method: 'POST',
       headers: {
-        Accept: 'application/json, text/plain, */*',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(sendedData),
     })
-      .then((res) => res.json())
+      .then((res) => {
+        console.log(res)
+        return res.json()
+      })
+      .then((res) => {
+        if (res.success) {
+          alert('Your request saved! I will contact you ASAP!')
+          setSendedData({ ...initialData })
+        } else {
+          alert('Error!')
+        }
+      })
       .catch((e) => {
         console.log(e)
       })
-    if (res.success) {
-      alert('Your request saved! I will contact you ASAP!')
-    } else {
-      alert('Error!')
-    }
   }
   return (
     <>
@@ -68,7 +74,7 @@ const Contact = () => {
             <label>Title</label>
             <input
               onChange={changer}
-              value={sendedData.title}
+              value={sendedData.messageTitle}
               name="messageTitle"
               type="text"
               required="required"

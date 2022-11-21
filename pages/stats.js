@@ -38,27 +38,6 @@ export default function Stats() {
             <Analytics />
           </div>
         </div>
-        <h2 className="mb-4 mt-16 text-3xl font-bold tracking-tight text-black dark:text-white">
-          My <span className="text-green-500">Spotify</span> Top Songs
-        </h2>
-        <p className="text-md mb-4 text-gray-600 dark:text-gray-400">
-          Curious what I'm currently jamming to? Here's my top tracks on Spotify updated daily.
-        </p>
-        <TopTracks />
-        <div className="flex flex-col pl-4 pt-10">
-          <p className="text-md text-gray-600 dark:text-gray-400">
-            Do you know a good song I should listen to?
-          </p>
-          <a
-            className="text-md mt-4 rounded-full border px-8 py-2 text-center font-normal text-gray-800 transition-colors hover:border-green-600 hover:bg-green-600 hover:text-white dark:text-gray-200"
-            href="https://twitter.com/messages/compose?recipient_id=4302974298&text=Hey Shokhrukh, you should listen to:"
-            data-screen-name="@shohwebper"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Parth you should listen to...
-          </a>
-        </div>
       </div>
     </>
   )
