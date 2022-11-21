@@ -4,13 +4,14 @@
   "private": true,
   "author": {
     "name": "Parth Desai",
-    "email": "desaiparth2000@gmail.com",
-    "url": "https://musing.vercel.app/"
+    "email": "shohwebper@gmail.com",
+    "url": "https://vipbron.uz/"
   },
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
     "build": "next build && node ./scripts/generate-sitemap",
+    "htmlbuild": "next build && node ./scripts/generate-sitemap && next export",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",

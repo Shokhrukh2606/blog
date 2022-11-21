@@ -47,7 +47,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             <div className="flex flex-col pt-3">
               <a
                 className="rounded-full border px-8 py-2 text-center text-sm font-light text-gray-700 transition-colors hover:border-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:shadow dark:text-white"
-                href="https://twitter.com/messages/compose?recipient_id=4302974298&text=Hey Parth"
+                href="https://twitter.com/messages/compose?recipient_id=1582809513903755264&text=Hey Shokhrukh"
                 data-screen-name="@shohwebper"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -67,17 +67,17 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDelay={300}
                 animationDuration={3000}
               >
-                {text1} Currently, I am focused on building data pipelines and automating them at{' '}
+                {text1}{' '}
                 <Link
-                  href={'https://www.accenture.com/in-en'}
+                  href={'https://www.miu.edu/'}
                   className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
                 >
-                  Accenture
+                  MIU
                 </Link>
               </RoughNotation>
             </p>
             <br />
-            <p>
+            {/* <p>
               This is what I am doing right{' '}
               <Link
                 href={'/now'}
@@ -86,7 +86,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                 now
               </Link>
             </p>
-            <br />
+            <br /> */}
             <p className="sm:block md:hidden lg:hidden">
               I am always looking to learn new things. I am currently working on a few projects
               related to
@@ -107,7 +107,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                 Science.
               </RoughNotation>
             </p>
-            <p className="hidden md:block">
+            {/* <p className="hidden md:block">
               I am always looking to learn new things. I am currently working on a few projects
               related to{' '}
               <RoughNotation
@@ -134,14 +134,13 @@ export default function AuthorLayout({ children, frontMatter }) {
                 actively on the lookout for remote internships which I can pursue in field of Data
                 Science
               </RoughNotation>
-            </p>
+            </p> */}
             <br />
             <p>
-              I am a strong advocate for open source and I am always interested in working on new
-              projects with new people. Feel free to reach out if you have anything to talk about,
-              you can reach me through{' '}
+              I am always interested in working on new projects with new people. Feel free to reach
+              out if you have anything to talk about, you can reach me through{' '}
               <Link
-                href={'mailto:desaiparth2000@gmail.com'}
+                href={'mailto:shohwebper@gmail.com'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
                 Mail
@@ -161,10 +160,10 @@ export default function AuthorLayout({ children, frontMatter }) {
               </Link>{' '}
               or{' '}
               <Link
-                href={'https://api.whatsapp.com/send?phone=916358190818&text=hi'}
+                href={'https://t.me/webper'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
-                Whatsapp
+                Telegram
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

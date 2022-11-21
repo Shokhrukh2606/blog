@@ -14,7 +14,7 @@ summary: Getting the Spotify Refresh Token doesn't need to be a hassle any longe
 
 In this blog, I'll show you 2 approaches to generate the Spotify Refresh Token and then use that to programmatically create an access token when needed.
 
-I needed the Spotify Refresh Token for my blog site in which I could display my [Top 10 Tracks](https://musing.vercel.app/stats) as well as display the currently playing track in the footer section.
+I needed the Spotify Refresh Token for my blog site in which I could display my [Top 10 Tracks](https://vipbron.uz/stats) as well as display the currently playing track in the footer section.
 
 # First Approach
 
@@ -68,7 +68,7 @@ I needed the Spotify Refresh Token for my blog site in which I could display my 
 
 ## Step 1: Generate your Spotify `client_id` and `client_secret`
 
-- Follow the steps from Approach 1 till step 2 and add `<website>/callback` to your `Redirect URIs`. Eg. `http://musing.vercel.app/callback`
+- Follow the steps from Approach 1 till step 2 and add `<website>/callback` to your `Redirect URIs`. Eg. `http://vipbron.uz/callback`
 
 <br />
 
@@ -83,21 +83,22 @@ I needed the Spotify Refresh Token for my blog site in which I could display my 
 - This is how mine looked like.
 
   ```bash
-  https://accounts.spotify.com/authorize?response_type=code&client_id=CLIENT_ID&scope=SCOPE&redirect_uri=https%3A%2F%2Fmusing.vercel.app%2Fcallback
+  https://accounts.spotify.com/authorize?response_type=code&client_id=CLIENT_ID&scope=SCOPE&redirect_uri=https%3A%2F%2Fvipbron.uz%2Fcallback
   ```
 
 <br />
 
 ## Step 3: Get access code from the redirect URI
 
-- You will be redirected to your redirect URI which in my case was set to *https://musing.vercel.app/callback*.
+- You will be redirected to your redirect URI which in my case was set to *https://vipbron.uz/callback*.
 
 - In the address bar you will find a huge URL string similar to the one below. In place of `$ACCESSCODE` there will be a long string of characters. Note down that string for the next step.
 
   ```bash
-  https://musing.vercel.app/callback?code=$ACCESSCODE
+  https://vipbron.uz/callback?code=$ACCESSCODE
   ```
-<br />
+
+  <br />
 
 ## Step 4: Get the refresh token
 

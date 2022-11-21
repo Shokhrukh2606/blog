@@ -3,7 +3,7 @@ name: Parth Desai
 avatar: /static/images/avatar.png
 occupation: Data Engineer
 company: Accenture
-email: desaiparth2000@gmail.com
+email: shohwebper@gmail.com
 twitter: https://twitter.com/shohwebper
 linkedin: https://www.linkedin.com/in/parth-desai-2bb1b0160/
 github: https://github.com/pycoder2000
