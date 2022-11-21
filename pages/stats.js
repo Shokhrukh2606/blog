@@ -6,7 +6,6 @@ import GitHub from '@/components/metrics/Github'
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import TopTracks from '@/components/TopTracks'
-import NowPlaying from '@/components/NowPlaying'
 
 export default function Stats() {
   return (
@@ -45,9 +44,6 @@ export default function Stats() {
         <p className="text-md mb-4 text-gray-600 dark:text-gray-400">
           Curious what I'm currently jamming to? Here's my top tracks on Spotify updated daily.
         </p>
-        <div>
-          <NowPlaying />
-        </div>
         <TopTracks />
         <div className="flex flex-col pl-4 pt-10">
           <p className="text-md text-gray-600 dark:text-gray-400">
