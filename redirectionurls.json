@@ -1,0 +1,98 @@
+[
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/index.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/snippets"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/snippets.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/projects"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/projects.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/about"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/about.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/contact"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/contact.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/blog"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/blog.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/tags"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/tags.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/uses"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/uses.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/stats"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/stats.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/journey"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/journey.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/recommends"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/recommends.html"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "/quotes"
+    },
+    "Redirect": {
+      "ReplaceKeyWith": "/quote.htmls"
+    }
+  }
+]

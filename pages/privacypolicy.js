@@ -104,11 +104,11 @@ export default function PrivacyPolicy() {
                 <strong className="dark:text-gray-100">Website</strong> refers to Blog, accessible
                 from{' '}
                 <a
-                  href="https://vipbron.uz/"
+                  href="https://datagrid.uz/"
                   rel="external nofollow noopener noreferrer"
                   target="_blank"
                 >
-                  https://vipbron.uz/
+                  https://datagrid.uz/
                 </a>
               </p>
             </li>

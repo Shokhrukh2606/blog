@@ -6,7 +6,7 @@ const siteMetadata = {
   snippets: 'Reuseable code snippets collected by Shokhrukh',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://vipbron.uz',
+  siteUrl: 'https://datagrid.uz',
   siteRepo: 'https://github.com/Shokhrukh2606/blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',

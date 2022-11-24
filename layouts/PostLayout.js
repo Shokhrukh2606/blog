@@ -2,7 +2,6 @@ import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
-import Image from '@/components/Image'
 import ViewCounter from '@/components/ViewCounter'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -81,7 +80,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {authorDetails.map((author) => (
                     <li className="flex items-center space-x-2" key={author.name}>
                       {author.avatar && (
-                        <Image
+                        <img
+                          unoptimized={true}
                           src={author.avatar}
                           width="38px"
                           height="38px"

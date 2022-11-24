@@ -1,4 +1,3 @@
-import Image from 'next/image'
 export default function Track(track) {
   return (
     <div className="group mt-8 flex w-full max-w-3xl transform flex-row items-baseline border-b border-gray-100 transition-all hover:scale-[1.03] dark:border-gray-800">
@@ -6,9 +5,17 @@ export default function Track(track) {
       <div className="flex justify-self-auto">
         <div className="flex flex-col pl-3">
           {track.imageUrl ? (
-            <Image className="rounded-lg" src={track.imageUrl} width={48} height={48} alt="" />
+            <img
+              unoptimized={true}
+              className="rounded-lg"
+              src={track.imageUrl}
+              width={48}
+              height={48}
+              alt=""
+            />
           ) : (
-            <Image
+            <img
+              unoptimized={true}
               className="rounded-lg"
               src="/static/images/spotify.jpeg"
               width={48}

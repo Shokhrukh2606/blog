@@ -1,3 +1,4 @@
+const optimizedImages = require('next-optimized-images')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -70,6 +71,9 @@ module.exports = withBundleAnalyzer({
       'res.craft.do',
       'res.cloudinary.com', // Twitter Profile Picture
     ],
+    // unoptimized: true,
+    // loader: 'akamai',
+    // path: ''
   },
   rewrites: async () => [
     {
@@ -106,5 +110,21 @@ module.exports = withBundleAnalyzer({
     }
 
     return config
+  },
+  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
+    return {
+      '/': { page: '/' },
+      '/snippets': { page: '/snippets' },
+      '/projects': { page: '/projects' },
+      '/about': { page: '/about' },
+      '/contact': { page: '/contact' },
+      '/blog': { page: '/blog' },
+      '/tags': { page: '/tags' },
+      '/uses': { page: '/uses' },
+      '/stats': { page: '/stats' },
+      '/journey': { page: '/journey' },
+      '/recommends': { page: '/recommends' },
+      '/quotes': { page: '/quotes' },
+    }
   },
 })

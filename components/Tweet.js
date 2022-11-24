@@ -1,4 +1,3 @@
-import Image from './Image'
 import { format } from 'date-fns'
 
 /**
@@ -30,7 +29,8 @@ export default function Tweet({
     <div className=" my-3 w-full max-w-3xl rounded-md border border-gray-100 bg-white px-4 py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
       <div className="flex items-center">
         <a className="flex h-12 w-12" href={authorUrl} target="_blank" rel="noopener noreferrer">
-          <Image
+          <img
+            unoptimized={true}
             alt={author.username}
             height={48}
             width={48}
@@ -88,7 +88,8 @@ export default function Tweet({
           }
         >
           {media.map((m) => (
-            <Image
+            <img
+              unoptimized={true}
               key={m.media_key}
               alt={text}
               height={m.height}
