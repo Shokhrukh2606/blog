@@ -1,6 +1,6 @@
 ---
 name: Shokhrukh Toshniyozov
-avatar: /static/images/avatar.png
+avatar: /static/images/avatar.jpg
 occupation: Full Stack Developer
 company: Graduate Student
 email: shohwebper@gmail.com

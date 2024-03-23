@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://datagrid.uz',
   siteRepo: 'https://github.com/Shokhrukh2606/blog',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'shohwebper@gmail.com',
   github: 'https://github.com/Shokhrukh2606',

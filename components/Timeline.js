@@ -23,10 +23,24 @@ export default function Timeline() {
             </span>
           </h3>
           <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            December 1st, 2022
+            March 22nd, 2024
           </time>
           <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
             Feel confident that I can work as a Senior Full Stack Developer. Wish me Luck
+          </p>
+        </li>
+        <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
+          <span className=" absolute -left-3 flex h-6 w-6 animate-pulse items-center justify-center rounded-full bg-blue-200 ring-8 ring-white dark:bg-green-900 dark:ring-gray-900">
+            <FaBlackTie className="animate-none" />
+          </span>
+          <h3 className="flex items-center text-base  font-semibold text-gray-900 dark:text-white">
+            I joined Amazon as part of my CPT journey.
+           </h3>
+          <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+           January 25, 2023
+          </time>
+          <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+          I spearheaded the transformation of AS/400 applications to Java during my tenure at Amazon.
           </p>
         </li>
         <li className="mb-2 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">

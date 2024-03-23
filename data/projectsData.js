@@ -1,5 +1,15 @@
 const projectsData = [
   {
+    title: 'Amazon Web Services',
+    description: `Led the modernization of legacy AS/400 applications to robust Java-based solutions, enhancing system performance and scalability.`,
+    imgSrc: '',
+    href: '',
+    github: 'https://aws.amazon.com/',
+    tech1: 'Spring Boot',
+    tech2: 'Angular',
+    tech3: 'RPG, Cobol',
+  },
+  {
     title: 'Efito Uz',
     description: `ERP system. The overall objective of the project was to provide any interested country with the opportunity to exchange electronic phytosanitary certificates (known as "ePhytos") to facilitate safe and efficient trade in plant products.`,
     imgSrc: '',

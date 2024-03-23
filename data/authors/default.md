@@ -1,6 +1,6 @@
 ---
-name: Parth Desai
-avatar: /static/images/avatar.png
+name: Shokhrukh Toshniyozov
+avatar: /static/images/avatar.jpg
 occupation: Data Engineer
 company: Accenture
 email: shohwebper@gmail.com
