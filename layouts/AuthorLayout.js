@@ -68,12 +68,6 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDuration={3000}
               >
                 {text1}{' '}
-                <Link
-                  href={'https://www.miu.edu/'}
-                  className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-                >
-                  MIU
-                </Link>
               </RoughNotation>
             </p>
             <br />
