@@ -1,0 +1,37 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main  # Adjust this if you want to deploy from a different branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Install Node.js (only needed if you have a Next.js or other Node-based build step)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Set your Node.js version
+
+      # Install dependencies and build the project (adjust as per your project setup)
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run htmlbuild  # This should generate a build folder with your static files
+
+      # Sync files to S3 bucket
+      - name: Deploy to S3
+        uses: aws-actions/s3-sync-action@v1.1.0
+        with:
+          bucket: ${{ secrets.S3_BUCKET_NAME }}
+          region: ${{ secrets.AWS_REGION }}
+          source-dir: ./out  # Set this to your build folder, e.g., "out" for Next.js
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
