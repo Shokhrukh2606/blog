@@ -27,7 +27,7 @@ jobs:
 
       # Sync files to S3 bucket
       - name: Deploy to S3
-        uses: aws-actions/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@master
         with:
           bucket: ${{ secrets.S3_BUCKET_NAME }}
           region: ${{ secrets.AWS_REGION }}
